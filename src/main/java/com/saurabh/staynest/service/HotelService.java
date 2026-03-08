@@ -1,6 +1,7 @@
 package com.saurabh.staynest.service;
 
 import com.saurabh.staynest.dto.HotelDto;
+import com.saurabh.staynest.dto.HotelInfoDto;
 
 public interface HotelService {
     HotelDto createNewHotel(HotelDto hotelDto);
@@ -13,4 +14,5 @@ public interface HotelService {
 
     void activateHotel(Long hotelId);
 
+    HotelInfoDto getHotelInfoById(Long hotelId);
 }
