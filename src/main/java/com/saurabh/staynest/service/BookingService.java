@@ -3,12 +3,22 @@ package com.saurabh.staynest.service;
 import com.saurabh.staynest.dto.BookingDto;
 import com.saurabh.staynest.dto.BookingRequest;
 import com.saurabh.staynest.dto.GuestDto;
+import com.stripe.model.Event;
 
 import java.util.List;
+import java.util.Map;
 
 public interface BookingService {
 
     BookingDto initialiseBooking(BookingRequest bookingRequest);
 
     BookingDto addGuests(Long bookingId, List<GuestDto> guestDtoList);
+
+    String initiatePayments(Long bookingId);
+
+    void capturePayment(Event event);
+
+    void cancelBooking(Long bookingId);
+
+    String getBookingStatus(Long bookingId);
 }
