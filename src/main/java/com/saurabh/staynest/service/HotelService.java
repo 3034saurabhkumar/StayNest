@@ -2,6 +2,7 @@ package com.saurabh.staynest.service;
 
 import com.saurabh.staynest.dto.HotelDto;
 import com.saurabh.staynest.dto.HotelInfoDto;
+import com.saurabh.staynest.dto.HotelInfoRequestDto;
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ public interface HotelService {
 
     void activateHotel(Long hotelId);
 
-    HotelInfoDto getHotelInfoById(Long hotelId);
+    HotelInfoDto getHotelInfoById(Long hotelId, HotelInfoRequestDto hotelInfoRequestDto);
 
     List<HotelDto> getAllHotels();
 }

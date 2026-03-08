@@ -2,8 +2,8 @@ package com.saurabh.staynest.service;
 
 import com.saurabh.staynest.dto.BookingDto;
 import com.saurabh.staynest.dto.BookingRequest;
-import com.saurabh.staynest.dto.GuestDto;
 import com.saurabh.staynest.dto.HotelReportDto;
+import com.saurabh.staynest.entity.enums.BookingStatus;
 import com.stripe.model.Event;
 
 import java.time.LocalDate;
@@ -13,7 +13,7 @@ public interface BookingService {
 
     BookingDto initialiseBooking(BookingRequest bookingRequest);
 
-    BookingDto addGuests(Long bookingId, List<GuestDto> guestDtoList);
+    BookingDto addGuests(Long bookingId, List<Long> guestIdList);
 
     String initiatePayments(Long bookingId);
 
@@ -21,7 +21,7 @@ public interface BookingService {
 
     void cancelBooking(Long bookingId);
 
-    String getBookingStatus(Long bookingId);
+    BookingStatus getBookingStatus(Long bookingId);
 
     List<BookingDto> getAllBookingsByHotelId(Long hotelId);
 
