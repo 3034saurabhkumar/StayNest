@@ -1,4 +1,4 @@
-package com.codingshuttle.projects.airBnbApp.exception;
+package com.saurabh.staynest.exception;
 
 public class ResourceNotFoundException extends RuntimeException{
     public ResourceNotFoundException(String message) {

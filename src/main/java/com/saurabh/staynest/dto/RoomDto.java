@@ -1,4 +1,4 @@
-package com.codingshuttle.projects.airBnbApp.dto;
+package com.saurabh.staynest.dto;
 import lombok.Data;
 
 import java.math.BigDecimal;

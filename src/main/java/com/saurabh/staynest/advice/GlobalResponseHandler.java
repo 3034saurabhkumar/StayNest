@@ -1,4 +1,4 @@
-package com.codingshuttle.projects.airBnbApp.advice;
+package com.saurabh.staynest.advice;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.http.MediaType;

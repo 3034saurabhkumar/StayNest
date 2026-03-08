@@ -1,8 +1,8 @@
-package com.codingshuttle.projects.airBnbApp.service;
+package com.saurabh.staynest.service;
 
-import com.codingshuttle.projects.airBnbApp.entity.Inventory;
-import com.codingshuttle.projects.airBnbApp.entity.Room;
-import com.codingshuttle.projects.airBnbApp.repository.InventoryRepository;
+import com.saurabh.staynest.entity.Inventory;
+import com.saurabh.staynest.entity.Room;
+import com.saurabh.staynest.repository.InventoryRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

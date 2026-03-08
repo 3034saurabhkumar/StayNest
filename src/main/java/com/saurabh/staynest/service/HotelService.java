@@ -1,6 +1,6 @@
-package com.codingshuttle.projects.airBnbApp.service;
+package com.saurabh.staynest.service;
 
-import com.codingshuttle.projects.airBnbApp.dto.HotelDto;
+import com.saurabh.staynest.dto.HotelDto;
 
 public interface HotelService {
     HotelDto createNewHotel(HotelDto hotelDto);

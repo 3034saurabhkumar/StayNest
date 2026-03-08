@@ -1,6 +1,6 @@
-package com.codingshuttle.projects.airBnbApp.service;
+package com.saurabh.staynest.service;
 
-import com.codingshuttle.projects.airBnbApp.entity.Room;
+import com.saurabh.staynest.entity.Room;
 
 public interface InventoryService {
 

@@ -1,6 +1,6 @@
-package com.codingshuttle.projects.airBnbApp.repository;
+package com.saurabh.staynest.repository;
 
-import com.codingshuttle.projects.airBnbApp.entity.Hotel;
+import com.saurabh.staynest.entity.Hotel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

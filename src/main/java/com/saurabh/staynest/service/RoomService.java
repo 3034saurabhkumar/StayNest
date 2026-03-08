@@ -1,6 +1,6 @@
-package com.codingshuttle.projects.airBnbApp.service;
+package com.saurabh.staynest.service;
 
-import com.codingshuttle.projects.airBnbApp.dto.RoomDto;
+import com.saurabh.staynest.dto.RoomDto;
 
 import java.util.List;
 

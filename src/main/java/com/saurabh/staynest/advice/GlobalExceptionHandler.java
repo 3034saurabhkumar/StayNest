@@ -1,6 +1,6 @@
-package com.codingshuttle.projects.airBnbApp.advice;
+package com.saurabh.staynest.advice;
 
-import com.codingshuttle.projects.airBnbApp.exception.ResourceNotFoundException;
+import com.saurabh.staynest.exception.ResourceNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

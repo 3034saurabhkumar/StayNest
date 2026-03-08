@@ -1,7 +1,7 @@
-package com.codingshuttle.projects.airBnbApp.controller;
+package com.saurabh.staynest.controller;
 
-import com.codingshuttle.projects.airBnbApp.dto.HotelDto;
-import com.codingshuttle.projects.airBnbApp.service.HotelService;
+import com.saurabh.staynest.dto.HotelDto;
+import com.saurabh.staynest.service.HotelService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;

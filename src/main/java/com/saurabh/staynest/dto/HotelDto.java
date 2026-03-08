@@ -1,6 +1,6 @@
-package com.codingshuttle.projects.airBnbApp.dto;
+package com.saurabh.staynest.dto;
 
-import com.codingshuttle.projects.airBnbApp.entity.HotelContactInfo;
+import com.saurabh.staynest.entity.HotelContactInfo;
 import lombok.Data;
 
 @Data

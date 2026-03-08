@@ -1,4 +1,4 @@
-package com.codingshuttle.projects.airBnbApp.advice;
+package com.saurabh.staynest.advice;
 
 import lombok.Builder;
 import lombok.Data;

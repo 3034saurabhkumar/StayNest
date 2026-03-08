@@ -1,11 +1,11 @@
-package com.codingshuttle.projects.airBnbApp.service;
+package com.saurabh.staynest.service;
 
-import com.codingshuttle.projects.airBnbApp.dto.RoomDto;
-import com.codingshuttle.projects.airBnbApp.entity.Hotel;
-import com.codingshuttle.projects.airBnbApp.entity.Room;
-import com.codingshuttle.projects.airBnbApp.exception.ResourceNotFoundException;
-import com.codingshuttle.projects.airBnbApp.repository.HotelRepository;
-import com.codingshuttle.projects.airBnbApp.repository.RoomRepository;
+import com.saurabh.staynest.dto.RoomDto;
+import com.saurabh.staynest.entity.Hotel;
+import com.saurabh.staynest.entity.Room;
+import com.saurabh.staynest.exception.ResourceNotFoundException;
+import com.saurabh.staynest.repository.HotelRepository;
+import com.saurabh.staynest.repository.RoomRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.ModelMapper;
