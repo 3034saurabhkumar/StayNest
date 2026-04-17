@@ -1,0 +1,32 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      java: corretto21
+    commands:
+      - echo Java version:
+      - java -version
+  pre_build:
+    commands:
+      - echo Logging in to Docker hub...
+      - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
+  build:
+    commands:
+      - echo Building, Testing and packaging the application...
+      - mvn package -DskipTests
+      - echo Building Docker Image...
+      # Standard format: docker build -t username/repository:tag .
+      - docker build -t $DOCKER_USERNAME/staynest:latest .
+  post_build:
+    commands:
+      - echo Pushing Docker Image to Docker Hub...
+      - docker push $DOCKER_USERNAME/staynest:latest
+      - echo Build, Testing, packaging and Push completed.
+artifacts:
+  files:
+    - target/*.jar
+  discard-paths: yes
+cache:
+  paths:
+    - '/root/.m2/**/*'
