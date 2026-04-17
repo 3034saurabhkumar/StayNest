@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: staynest
+
+  #DB Configuration
+  datasource:
+    url: jdbc:postgresql://localhost:5432/staynest
+
+  jpa:
+    hibernate:
+      ddl-auto=update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+  #flyway configuration
+  flyway:
+    enabled: false
+
+server:
+  servlet:
+    context-path: /api/v1
+
+jwt:
+  secretKey: ${JWT_SECRET_KEY}
+
+frontend:
+  url: http://localhost:8080
+
+stripe:
+  secret:
+    key: ${STRIPE_SECRET_KEY}
+  webhook:
+    secret: ${STRIPE_WEBHOOK_SECRET}
+
+my:
+  variable: dev
